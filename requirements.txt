@@ -1,9 +1,9 @@
 click==7.1.2
 gunicorn==20.0.4
-itsdangerous==1.1.0
+itsdangerous
 Jinja2==2.11.3
-MarkupSafe==1.1.1
-Werkzeug==1.0.1
+MarkupSafe
+Werkzeug
 Flask==2.0.2
 line-bot-sdk
 requests==2.27.1
