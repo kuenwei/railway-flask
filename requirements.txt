@@ -5,3 +5,13 @@ itsdangerous==1.1.0
 Jinja2==2.11.3
 MarkupSafe==1.1.1
 Werkzeug==1.0.1
+Flask==2.0.2
+gunicorn==19.9.0
+line-bot-sdk==2.0.1
+requests==2.27.1
+psycopg2==2.9.3
+numpy==1.19.4
+Pillow==8.0.1
+pygsheets==2.0.5
+regex==2021.8.28
+APScheduler==3.8.1
