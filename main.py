@@ -4,6 +4,10 @@ import re
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 
+# 利用 handler 處理 LINE 觸發事件
+from linebot.models import MessageEvent, TextMessage, TextSendMessage
+
+
 app = Flask(__name__)
 
 # get channel_secret and channel_access_token from your environment variable
@@ -22,9 +26,6 @@ if channel_access_token is None:
 line_bot_api = LineBotApi(channel_access_token)
 parser = WebhookParser(channel_secret)
 handler = WebhookHandler(channel_secret)
-
-# 利用 handler 處理 LINE 觸發事件
-from linebot.models import MessageEvent, TextMessage, TextSendMessage
 
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
