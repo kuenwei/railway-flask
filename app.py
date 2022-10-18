@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request, abort
 import os
 import re
 import sys
-from linebot import LineBotApi, WebhookHandler
+from linebot import LineBotApi, WebhookHandler, WebhookParser
 from linebot.exceptions import InvalidSignatureError
 
 # 利用 handler 處理 LINE 觸發事件
